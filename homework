@@ -1,0 +1,110 @@
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i==n/2-0.5:
+          a[i][j] = 1
+        elif j==0:
+          a[i][j] = 1
+        elif j == n-1:
+          a[i][j] = 1
+        else:
+          a[i][j] = 0
+for row in a:
+  print(' '.join([str(elem) for elem in row]))
+print('\n')
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if j == n / 2 - 0.5:
+            a[i][j] = 1
+        elif i == n / 2 - 0.5:
+            a[i][j] = 1
+        elif i == j:
+            a[i][j] = 1
+        elif i + j == n - 1:
+            a[i][j] = 1
+        else:
+            a[i][j] = 0
+for row in a:
+    print(' '.join([str(elem) for elem in row]))
+print('\n')
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i==n/2-0.5:
+          a[i][j] = 1
+        elif j==0:
+          a[i][j] = 1
+        elif j==1:
+          a[i][j] = 1
+        elif j==n-1:
+          a[i][j] = 1
+        elif i==0:
+          a[i][j] = 1
+        elif i==n-1:
+          a[i][j] = 1
+        else:
+          a[i][j] = 0
+for row in a:
+  print(' '.join([str(elem) for elem in row]))
+print('\n')
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if i==n/2-0.5:
+          if j<n/2:
+            a[i][j] = 1        
+        elif j==0:
+          a[i][j] = 1
+        elif i==0:
+          a[i][j] = 1
+        else:
+          a[i][j] = 0
+for row in a:
+  print(' '.join([str(elem) for elem in row]))
+
+print('\n')
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if j==n/2-0.5:
+          if i==1:
+            a[i][j] = 0
+          else:
+            a[i][j] = 1
+for row in a:
+  print(' '.join([str(elem) for elem in row]))
+
+print('\n')
+n = 9
+a = [[0] * n for i in range(n)]
+for i in range(n):
+    for j in range(n):
+        if j==0:
+          if i>n/2-1:
+            a[i][j] = 1
+          else:
+            a[i][j] = 0
+        elif j==n-1:
+          if i>n/2-1:
+            a[i][j] = 1
+          else:
+            a[i][j] = 0
+        elif i+j==4:
+            a[i][j] = 1
+        elif i==n/2-0.5:
+          a[i][j] = 1
+        elif i>n/2-0.5:
+            if i==j:
+                if i<n/2-0.5:
+                    a[i][j] = 0
+                else:
+                    a[i][j+1] =1
+for row in a:
+  print(' '.join([str(elem) for elem in row]))
+
